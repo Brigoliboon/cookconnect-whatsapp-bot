@@ -1,0 +1,268 @@
+recipes[267]{name,category,active,serving,price_aed,calories,protein_g,carbs_g,fats_g,description}:
+  Acai w Coconut and Banana,breakfast,true,Standard,32,255,6.5,36,10,Acai bowl with coconut and banana.
+  Egg Omelet w Spinach & Mushroom,breakfast,true,Standard,19.99,325,18.3,5.1,19.9,Egg omelet with fresh spinach and mushrooms
+  Greek Salad (Chicken),salad,true,Standard,35,390,28,10,26,"Crisp Mediterranean salad with feta cheese, olives, and fresh vegetables."
+  French Fries,rice-sides,true,150g,15.99,243,2.7,29.2,6.4,Crispy golden French fries
+  BBQ Paneer,vegetable,true,Standard,24.99,530,18.1,33.4,27,Paneer grilled with smoky BBQ seasoning
+  Smoked Salmon,seafood,true,150g,44.99,280,34,2,14,Fresh salmon fillet grilled and seasoned to perfection
+  Shrimp Arrabbiata Pasta,pasta,true,Standard,35,455,21.2,55,13,Lightly spicy tomato pasta with Italian herbs.
+  Banana Mix with Nuts Cake,desserts,true,Standard,14.99,null,null,null,null,""
+  Beef Lasagna,pasta,true,Standard,30,585,33.5,45,25.2,Layers of pasta baked with rich sauce and melted cheese.
+  Chicken Beetroot Pasta,pasta,true,Standard,40,565,32.5,52,24,Pasta coated in a creamy beetroot sauce.
+  Shrimp Fusilli Pasta,pasta,true,Standard,30,520,26.8,50,20.5,Spiral pasta served with your favorite sauce.
+  Mini Beef Milanese,beef,false,Standard,38,480,28,25,30,Mini beef Milanese
+  Chinese Rice,rice-sides,true,150g,9.99,null,null,null,null,""
+  Chicken Fettuccine,pasta,false,Standard,30,555,33,50,22.5,Creamy fettuccine finished with parmesan cheese.
+  Chicken Fusilli Pasta,pasta,true,Standard,35,555,33.5,50,22,Spiral pasta served with your favorite sauce.
+  Chicken Lasagna,pasta,true,Standard,35,520,35,45,20.5,Spiral pasta served with your favorite sauce.
+  Crispy Chicken Croissant,burgers,true,Standard,29.99,null,null,null,null,""
+  Chicken Arrabbiata Pasta,pasta,true,Standard,30,480,28,55,14.5,Lightly spicy tomato pasta with Italian herbs.
+  Chicken Mix Sauce Pasta,pasta,true,Standard,30,505,29,55,17.5,Pasta coated in a creamy blend of white and tomato sauces.
+  Chicken Pasta Pesto,pasta,true,Standard,35,610,35,48,30.5,Pasta coated in fragrant basil pesto with parmesan cheese.
+  Chicken Red Sauce Pasta,pasta,true,Standard,30,465,28.5,55,12.5,Classic pasta tossed in a rich tomato sauce.
+  Chicken White Sauce Pasta,pasta,true,Standard,30,530,30.5,55,20,"Pasta tossed in a smooth, creamy white sauce with parmesan"
+  Scottish Fillet Beef Stew,beef,false,Standard,38,450,32,30,22,Scottish-style beef fillet stew
+  Salmon Fettuccine,pasta,false,Standard,45,540,30,50,23,Creamy fettuccine finished with parmesan cheese.
+  Beetroot Chicken Risotto,risotto,true,Regular,25,677,48.5,64.6,23.2,Creamy beetroot risotto with a rich and earthy flavor
+  Shrimp Risotto,risotto,true,Regular,34.99,558,58.4,59.8,14.1,Shrimp risotto
+  Shrimp Fettuccine,pasta,false,Standard,35,520,26.2,50,21,Creamy fettuccine finished with parmesan cheese.
+  Carrot Cake,desserts,true,Slice,14.99,463,6.9,50,27.6,Carrot cake slice with cream cheese frosting
+  Greek Salad (No meat),salad,true,Standard,30,310,9.5,12,22,"Crisp Mediterranean salad with feta cheese, olives, and fresh vegetables."
+  Aglio Olio Shrimp Pasta,pasta,true,Standard,20,410,22.8,52.5,11.2,"Spaghetti tossed in garlic, olive oil, parsley, and parmesan."
+  Chicken Iceburger SPL,burgers,true,Chicken,29.99,611,31.8,55.7,27.6,Crispy chicken with fresh toppings and special sauce
+  Beef Iceburger SPL,burgers,true,Beef,37.99,624,33.8,41.5,34.4,Beef burger with fresh toppings and special sauce
+  Shrimp BBQ,seafood,true,150g,34.99,320,24,28,12,"Juicy shrimp glazed in a smoky, tangy BBQ sauce"
+  Creamy Chicken Mushroom Soup,soup,true,Standard,19.99,285,14.8,14.2,18.5,Creamy chicken and mushroom soup with rich savory flavor
+  Chicken Biryani,biryani,true,Standard,25.99,636,52,82.8,18.7,Aromatic spiced rice dish prepared with your choice of protein
+  Shrimp Brown Alfredo Pasta,pasta,true,Standard,25,505,25.8,52,20.5,Whole wheat pasta in a rich and creamy Alfredo sauce.
+  Shrimp Pink Sauce Pasta,pasta,true,Standard,35,465,22.2,55,15.5,Pasta tossed in a creamy rosé sauce made with tomato and cream.
+  BBQ Wrap,wrap,true,Standard,24.99,263,38.4,22.3,18.4,Smoky barbecue flavor with melted cheese.
+  Beef Steak Wrap,wrap,true,Standard,34.99,252,18.6,15.4,21.6,Tender beef steak with fresh vegetables and cheese.
+  Burrito Wrap,wrap,true,Standard,29.99,218,33.2,23.3,15,"Mexican-style wrap with beans, cheese, and flavorful sauce."
+  Chicken Quesadilla,wrap,true,Standard,27,261,40.8,12.8,21.9,Grilled tortilla filled with melted cheese and chicken.
+  Slim Turkey Wrap,wrap,true,Standard,21.99,114,15.5,15.1,9,Lean turkey with cheese and fresh vegetables.
+  Chicken Tandoori Wrap,wrap,true,Standard,24.99,317,36,18.5,17.9,Tandoori-spiced chicken with creamy sauce.
+  Mango Banana Walnut,smoothie,true,null,null,null,null,null,null,"Creamy smoothie blended with mango, banana and walnuts"
+  Tuna Wrap,wrap,true,Standard,24.99,229,19.2,13.8,18.2,Tuna mixed with sweet corn and light mayo.
+  Chicken Tikka Wrap,wrap,true,Standard,24.99,177,21.2,13.6,11.3,Chicken tikka wrapped with fresh vegetables.
+  Egg Salad Wrap,wrap,true,Standard,17.99,244,12.9,15.4,21.7,Creamy egg salad wrapped in a soft tortilla.
+  Fajita Wrap,wrap,true,Standard,24.99,221,38.3,12.9,18.6,Fajita-seasoned filling with peppers and cheese.
+  Zinger Wrap,wrap,true,Standard,29.99,287,25.6,27.4,18.6,Crispy chicken with lettuce and spicy mayo.
+  Pepperoni Pizza,pizza,true,Regular,29.99,780,35,95,30,Classic pizza topped with savory pepperoni and melted cheese
+  Beef Patty Wrap,wrap,true,Standard,30,408,25.6,17.5,32.6,Juicy beef patty with cheese and signature sauce.
+  Shrimp Biryani,biryani,true,Regular,34.99,499,55.9,85.2,8,Aromatic spiced rice dish prepared with your choice of protein
+  Beetroot Shrimp Risotto,risotto,true,Regular,25,569,54.6,64.6,14.2,Creamy beetroot risotto with a rich and earthy flavor
+  Shakshuka,breakfast,true,Standard,19.99,273,13.4,5.1,15,Shakshuka
+  Beef Pasta Bolognese,pasta,true,Standard,35,545,33,58.5,18.2,"Pasta served with a slow-cooked, savory Bolognese sauce."
+  Shrimp Red Sauce Pasta,pasta,true,Standard,35,430,21.8,55,11,Classic pasta tossed in a rich tomato sauce.
+  Shrimp White Sauce Pasta,pasta,true,Standard,35,495,23.8,55,18.5,"Pasta tossed in a smooth, creamy white sauce with parmesan."
+  Grilled Shrimp Wrap,wrap,true,Standard,29.99,576,26.7,36.5,68.1,Grilled shrimp with cheese and creamy sauce.
+  Halloumi Wrap,wrap,true,Standard,24.99,406,19.7,14.2,28.5,Grilled halloumi cheese in a warm tortilla.
+  Labneh Zaatar Wrap,wrap,true,Standard,19.99,95,3.3,14.1,7.3,Creamy labneh with traditional zaatar.
+  Salmon Biryani,biryani,true,Regular,44.99,545,32.5,85.2,13.9,Aromatic spiced rice dish prepared with your choice of protein
+  Cajun Chicken,chicken,true,150g,30,584,41.7,42.7,18,Cajun-spiced grilled chicken.
+  Sweet Carrot Soup,soup,true,Standard,20,210,4.5,28,9.5,Smooth and naturally sweet carrot soup
+  Cheesecake,desserts,true,Slice,19.99,496,7.9,50,29,Cheesecake slice with berries
+  Beef Croissant,burgers,true,Standard,31.99,null,null,null,null,""
+  Okra Curry,vegetable,true,With Rice,14.99,370,8.8,75.2,10.6,Traditional curry served with rice
+  Barbecue Chicken,chicken,true,105g,25.99,525,37.9,76,8.7,Smoky BBQ glazed grilled chicken
+  Tandoori Chicken,chicken,true,150g,29.99,540,49.5,42.5,17,Indian-style yogurt-marinated grilled chicken.
+  Chicken Pesto,chicken,true,150g,30,445,39.6,5,32.7,Chicken served in fresh basil pesto sauce.
+  Chicken Yellow Curry,chicken,true,150g,25.99,491,31.1,45.6,10.5,Chicken in a creamy yellow curry sauce
+  Chicken Noodles,chicken,true,150g,25.99,436,34.7,52.8,6.9,Stir-fried chicken with noodles and vegetables.
+  Chicken in Tomato Sauce,chicken,true,150g,25,429,40,42,9.2,Chicken simmered in rich tomato sauce.
+  Grilled Chicken,chicken,true,150g,25,524,40.5,42.4,19.6,Simply grilled and seasoned chicken breast
+  Mix Sauce Chicken Risotto,risotto,true,Regular,35,711,48.5,61,28.5,Creamy risotto finished with a rich mixed sauce
+  Grilled Potato,rice-sides,true,150g,13.99,194,2.8,28.4,5.4,Golden grilled potato wedges
+  Chicken Fajita,chicken,true,150g,25.99,498,36.8,63.7,12,Mexican-style seasoned chicken with peppers
+  Blueberry Banana Greek Yogurt,smoothie,true,null,null,null,null,null,null,"Creamy smoothie blended with blueberries, banana and Greek yogurt"
+  Banana Milk & Walnut,smoothie,true,null,null,null,null,null,null,Creamy banana and milk smoothie with walnuts
+  Kiwi Juice,juice,true,null,null,null,null,null,null,Refreshing fresh kiwi juice
+  Green Apple Juice,juice,true,null,null,null,null,null,null,Fresh green apple juice
+  Strawberry & Melon Juice,juice,true,null,null,null,null,null,null,Refreshing strawberry and melon juice
+  Beetroot Lemon & Ginger Juice,juice,true,null,null,null,null,null,null,Refreshing beetroot juice with lemon and ginger
+  Strawberry and Lemon Juice,juice,true,null,null,null,null,null,null,Strawberry and lemon juice
+  Chocolate Protein Shake,beverages,true,null,null,null,null,null,null,Rich chocolate protein shake
+  Acai w Peanut Butter,breakfast,true,Standard,34.99,305,11,32.8,16.5,Acai bowl with peanut butter.
+  Chicken with Mushroom Sauce,chicken,true,150g,31,540,38.9,73,10.2,Grilled chicken in a creamy mushroom sauce
+  Beef Biryani,biryani,true,Regular,39.99,609,29.9,71.8,24.6,Aromatic spiced rice dish prepared with your choice of protein
+  White Fish Biryani,biryani,true,Regular,30,537,37.9,72.1,12.1,Aromatic spiced rice dish prepared with your choice of protein
+  Vegetable Soup,soup,true,Standard,19.99,145,6.5,22,3.5,Light vegetable soup made with fresh seasonal vegetables
+  Buffalo Chicken,chicken,true,150g,30.99,505,36,42,18.4,Chicken tossed in spicy buffalo sauce
+  Mashed Potato,rice-sides,true,150g,9.99,237,3.3,30.1,10.5,"Creamy, smooth mashed potato"
+  Sweet Potato,rice-sides,true,150g,13.99,199,2.9,30.4,6,Naturally sweet roasted sweet potato
+  Chicken Pizza,pizza,true,Regular,31.99,680,32,90,25,Pizza topped with tender chicken and melted cheese
+  Dynamite Chicken,chicken,true,150g,30.99,670,36.4,71,35.7,Chicken coated in creamy dynamite sauce.
+  Beef Mushroom,beef,true,Standard,39.99,420,30,12,28,Beef strips in mushroom sauce
+  Crepe con la Salsa,breakfast,true,Standard,27.99,325,12.6,36.2,13.1,Crepe served with sauce
+  Chicken Fit Platter,platters,true,Standard,29.99,450,35,40,15,"Healthy platter with grilled chicken, brown rice, and vegetables"
+  Cook Connect Salmon Platter,platters,true,Standard,49.99,null,null,null,null,""
+  Pink Salmon Platter,platters,true,Standard,44.99,480,32,30,25,Pink salmon platter with quinoa and avocado
+  Lentil Soup,soup,true,Standard,19.99,215,14.5,32,3.5,Hearty lentil soup with warming herbs and spices
+  Broccoli Soup,soup,true,Standard,19.99,245,9.5,18,16.5,Creamy broccoli soup blended to smooth perfection
+  Dates Shake,beverages,true,Regular,22.99,null,null,null,null,""
+  Meatballs in Tomato Sauce,beef,true,150g,40,564,32,53.5,19.5,Homemade beef meatballs in tomato sauce.
+  Mustard Beef Steak,beef,true,150g,39.99,475,30.5,61,13.6,Steak finished with a creamy mustard sauce.
+  3 Mini Beef with Mushroom Sauce,beef,true,150g,40,607,22.6,82.2,13.9,Tender mini beef pieces topped with creamy mushroom sauce.
+  Beef Noodles,beef,true,150g,39.99,520,32.4,71.1,15,Stir-fried beef with noodles and vegetables.
+  Beef Bacon Burger,burgers,true,Standard,25,656,44.2,39.1,34.7,Juicy beef burger topped with crispy bacon and cheese
+  Lemon Garlic Salmon,seafood,true,150g,44.99,302,31.5,0.8,18.4,Grilled salmon with lemon garlic butter.
+  Beef Casserole,beef,true,150g,39.99,585,31.2,56.9,23.6,Slow-cooked beef in a rich savory sauce.
+  Beef Kabab,beef,true,150g,39.99,610,39.4,44.9,30.5,Grilled beef skewers with aromatic spices.
+  Grilled White Fish,seafood,true,150g,31.99,323,36,0.3,34,Lightly seasoned grilled white fish.
+  Strawberry Banana Greek Yogurt,smoothie,true,null,null,null,null,null,null,"Creamy smoothie blended with strawberries, banana and Greek yogurt"
+  Teriyaki Salmon,seafood,true,150g,44.99,471,30,51,16.8,Salmon glazed with sweet teriyaki sauce.
+  White Fish with Mushroom Sauce,seafood,true,150g,30,242,20.9,12.1,6.6,White fish topped with creamy mushroom sauce.
+  Carrot & Ginger Juice,juice,true,null,null,null,null,null,null,Fresh carrot juice blended with ginger
+  Grilled Salmon,seafood,false,null,null,null,null,null,null,Fresh grilled salmon fillet.
+  Tuna,seafood,true,150g,29.99,202,21,3.3,11.4,Premium tuna served simply and fresh.
+  Lime & Mint Juice,juice,true,null,null,null,null,null,null,Refreshing lime and mint juice
+  Pineapple Juice,juice,true,null,null,null,null,null,null,Refreshing fresh pineapple juice
+  Dill Shrimp,seafood,true,150g,34.99,314,33.8,2.3,18.5,Shrimp finished with creamy dill sauce.
+  Salmon with Mushroom Sauce,seafood,true,150g,45,363,24.2,40.2,6.6,Salmon topped with creamy mushroom sauce.
+  Grilled Shrimp,seafood,true,150g,34.99,275,36.5,2.1,12.6,Perfectly grilled shrimp with herbs.
+  Shrimp in Tomato Sauce,seafood,true,150g,34.99,254,34.8,7.8,8.6,Shrimp simmered in rich tomato sauce.
+  Carrot Juice,juice,true,null,null,null,null,null,null,Fresh natural carrot juice
+  Orange Juice,juice,true,null,null,null,null,null,null,Fresh orange juice
+  Pepper Steak,beef,true,150g,39.99,435,27.2,68.3,8.8,Beef steak in a rich black pepper sauce.
+  Mix Sauce Shrimp Risotto,risotto,true,Regular,30,603,54.6,61,19.5,Creamy risotto finished with a rich mixed sauce
+  Beef Demi-glace,beef,false,null,null,null,null,null,null,"Rich and savory brown sauce with deep beef flavor, perfect for steak dishes."
+  Avocado & Banana Shake,beverages,true,null,null,null,null,null,null,Creamy avocado and banana shake
+  Avocado Banana Pistachio Protein Shake,beverages,true,null,null,null,null,null,null,Creamy avocado and banana protein shake with pistachios
+  Banana Strawberry Juice,beverages,true,null,null,null,null,null,null,Banana and strawberry drink
+  Classic Beef Cheeseburger,burgers,true,Beef,34.99,770,39,45,48,Classic juicy cheeseburger topped with melted cheese
+  Water,drinks,true,500ml,0.99,0,0,0,0,Refreshing bottled water
+  Coke Zero,drinks,true,225ml,3.99,0,0,0,0,Zero-sugar cola soft drink
+  7Up Zero,drinks,true,225ml,3.99,0,0,0,0,Zero-sugar lemon-lime soft drink
+  Pepsi Zero,drinks,true,225ml,3.99,0,0,0,0,Zero-sugar cola soft drink
+  Mountain Dew Zero,drinks,true,225ml,3.99,0,0,0,0,Zero-sugar citrus soft drink
+  Shrimp Pizza,pizza,true,Regular,37.99,720,30,92,28,Pizza topped with juicy shrimp and melted cheese
+  Turkey Robin Melt,burgers,true,Standard,24.99,383,22.4,29.9,18.8,Turkey sandwich melt with melted cheese and savory fillings
+  Chicken Sandwich,burgers,true,Standard,19.99,435,43.1,29.7,26.2,Tender chicken sandwich with fresh vegetables and savory sauce
+  Chicken Maghboos,biryani,true,Regular,29.99,534,44.7,84.4,15.9,Fragrant Gulf-style spiced rice with your choice of protein
+  Shrimp with Mushroom Sauce,seafood,true,150g,34.99,363,30.8,34.6,7.2,Shrimp in a creamy mushroom sauce.
+  Beef Steak Salad,salad,true,Standard,39.99,380,30,8,24,Tender beef steak served over fresh crisp salad
+  Beetroot Salad,salad,true,Standard,17.99,320,8,10.4,28.4,Fresh beetroot with mixed greens and a light house dressing.
+  Beetroot Salad,salad,true,Standard,17.99,320,8,10.4,28.4,Fresh beetroot with mixed greens and a light house dressing.
+  Quinoa Salad (salmon),salad,true,Standard,25,425,24,22,26,"Nutritious quinoa tossed with avocado, fresh vegetables, and mixed greens."
+  Chicken Brown Alfredo Pasta,pasta,false,Standard,20,535,32.5,52,22,Whole wheat pasta in a rich and creamy Alfredo sauce.
+  Fit Salad (chicken),salad,true,Standard,30,240,29,2.7,13.5,"Fresh garden salad with vegetables, feta cheese, and a boiled egg."
+  Fit Salad (chicken),salad,true,Standard,30,375,28,6.5,23.5,"Fresh garden salad with vegetables, feta cheese, and a boiled egg."
+  Mixed Berries Walnut Protein Shake,beverages,true,null,null,null,null,null,null,Mixed berry protein shake with walnuts
+  Grilled Chicken Caesar Salad,salad,true,Standard,25.99,null,null,null,null,""
+  Iceberg Crispy Chicken Wrap,wrap,true,Standard,21.99,null,null,null,null,""
+  Fit Salad (no meat),salad,true,Standard,20,273,14,6.5,21.5,"Fresh garden salad with vegetables, feta cheese, and a boiled egg."
+  Classic Chicken Cheeseburger,burgers,true,Chicken,24.99,541,34.7,56.1,18.8,Classic juicy cheeseburger topped with melted cheese
+  Red Rice,rice-sides,true,150g,9.99,119,2.9,19.6,4,"Nutty, hearty red rice"
+  Cooked Vegetables,rice-sides,true,150g,9.99,58,1.2,3.6,2.2,Fresh mixed seasonal vegetables
+  Mulukhiyah,vegetable,true,Standard,34.99,null,null,null,null,""
+  Beef Burger with Grilled Potato,burgers,false,Standard,35,530,35.1,33.5,25.9,Beef burger served with grilled potato
+  Fruit Dosa,breakfast,true,Standard,24.99,282,5.9,53.8,1.4,Fruit dosa
+  Smoothie Bowl,breakfast,true,Standard,34.99,264,7.7,37.9,10.8,Smoothie bowl
+  Healthy Platter,platters,true,Standard,43.99,420,30,35,18,Balanced healthy platter with lean protein and wholesome sides
+  Greek Salad (Salmon),salad,true,Standard,20,340,24,10,22,"Fresh Greek salad with crisp vegetables, feta and olives"
+  Healthy Club,burgers,true,Standard,25,392,33.8,32.6,21.1,Light and wholesome club sandwich with lean protein and fresh fillings
+  Philly Steak,burgers,true,Standard,40,399,25.3,39.7,15.4,Tender steak with sautéed fillings in a soft sandwich
+  Beef Maghboos,biryani,true,Regular,39.99,648,34.8,84.4,28.5,Fragrant Gulf-style spiced rice with your choice of protein
+  Balaleet w Egg,breakfast,true,Standard,24.99,333,10,36.5,7.4,Traditional sweet balaleet served with egg
+  Mixed Vegetables & Red Kidney Beans,vegetable,true,Standard,19.99,263,7.3,22.8,9.2,Mixed vegetables and red kidney beans
+  Mushroom Broccoli Rice,vegetable,true,Standard,19.99,286,5.7,30,10.2,Savory rice cooked with mixed vegetables
+  White Sauce Chicken Risotto,risotto,true,Regular,35,639,47.3,56.2,23.1,Creamy risotto finished with smooth white sauce
+  White Rice,rice-sides,true,150g,7.99,195,3.6,42.9,0.3,Fluffy steamed white rice
+  Quinoa Salad (Chicken),salad,true,Standard,20,327,22,22,17,"Nutritious quinoa tossed with avocado, fresh vegetables, and mixed greens."
+  Quinoa Salad (No meat),salad,true,Standard,25,327,6,22,17,"Nutritious quinoa tossed with avocado, fresh vegetables, and mixed greens."
+  Quinoa Salad (No meat),salad,true,Standard,25,327,6,22,17,"Nutritious quinoa tossed with avocado, fresh vegetables, and mixed greens."
+  Chicken Pink Sauce Pasta,pasta,true,Standard,30,500,29,55,17,Pasta tossed in a creamy rosé sauce made with tomato and cream.
+  Shrimp Beetroot Pasta,pasta,true,Standard,30,530,25.8,52,22.5,Pasta coated in a creamy beetroot sauce.
+  Hawaiian Pizza,pizza,true,Regular,31.99,700,28,100,24,Hawaiian pizza
+  Beef Kofta,beef,true,150g,39.99,null,null,null,null,""
+  Cookies,desserts,true,Standard,17.99,null,null,null,null,""
+  Egg Benedict,breakfast,true,Standard,34.99,null,null,null,null,""
+  Omelette Wrap,wrap,true,Standard,19.99,null,null,null,null,""
+  Pomegranate Juice,juice,true,Regular,17.99,null,null,null,null,""
+  Scrambled Egg Croissant,burgers,true,Standard,23.99,null,null,null,null,""
+  Scrambled Egg with Toast,breakfast,true,Standard,19.99,null,null,null,null,""
+  Truffle Beef Sandwich,burgers,true,Standard,29.99,null,null,null,null,""
+  Chocolate Brownies,desserts,true,Slice,14.99,472,7.7,63.2,20.6,Brownie cake slice
+  Caesar Salad (Chicken),salad,false,Standard,20,395,26,18,23.5,"Crisp romaine lettuce with parmesan, croutons, and Caesar dressing."
+  Oatmeal,breakfast,true,Standard,21.99,333,11.5,55.8,8.8,Warm creamy oatmeal prepared for a wholesome breakfast
+  Chicken Pasta Bolognese,pasta,true,Standard,30,480,28,58.5,13.5,Classic pasta with rich beef Bolognese sauce and parmesan
+  Mango Banana Walnut,smoothie,true,Regular,20,200,6,30,9,"Creamy smoothie blended with mango, banana and walnuts"
+  Strawberry Banana Greek Yogurt,smoothie,true,Regular,24.99,190,8,30,5,"Creamy smoothie blended with strawberries, banana and Greek yogurt"
+  Carrot & Ginger Juice,juice,true,Regular,17.99,75,2,16,1,Fresh carrot juice blended with ginger
+  Lime & Mint Juice,juice,true,Regular,14.99,60,1,14,0.3,Refreshing lime and mint juice
+  Pineapple Juice,juice,true,Regular,19.99,85,1,21,0.2,Refreshing fresh pineapple juice
+  Carrot Juice,juice,true,Regular,17.99,85,2,20,0.5,Fresh natural carrot juice
+  Orange Juice,juice,true,Regular,17.99,120,2,29,0.3,Fresh orange juice
+  Avocado & Banana Shake,beverages,true,Regular,22.99,230,4,30,12,Creamy avocado and banana shake
+  Avocado Banana Pistachio Protein Shake,beverages,true,Regular,19.99,380,28,35,18,Creamy avocado and banana protein shake with pistachios
+  Banana Strawberry Juice,beverages,true,Regular,17.99,170,4,32,4,Banana and strawberry drink
+  Beef Pizza,pizza,true,Regular,37.99,750,34,92,30,Pizza topped with seasoned beef and melted cheese
+  Vegetable Pizza,pizza,true,Regular,26.99,1076,38.9,144.7,37.1,Pizza topped with fresh vegetables and melted cheese.
+  Smoked Salmon Sandwich,breakfast,true,Standard,25,289,18.4,27.7,11.3,Smoked salmon sandwich
+  Tabouleh Salad,salad,true,Standard,18,287,7.1,28.8,16.3,"Traditional parsley salad with tomatoes, quinoa, pomegranate, and walnuts."
+  Tabouleh Salad,salad,true,Standard,18,287,7.1,28.8,16.3,"Traditional parsley salad with tomatoes, quinoa, pomegranate, and walnuts."
+  Egg Croissant,burgers,true,Standard,21.99,null,null,null,null,""
+  Iceberg Chicken Wrap,wrap,true,Standard,19.99,null,null,null,null,""
+  Lemon Cake,desserts,true,Slice,14.99,390,5,53.9,14.7,Lemon cake slice
+  Mulukhiyah Soup,soup,true,Standard,14.99,null,null,null,null,""
+  Acai w Fruits & Granola,breakfast,true,Standard,34.99,264,9.9,38.5,10,Creamy acai bowl topped with fresh fruits and crunchy granola
+  Potato Sandwich,burgers,true,Standard,14.99,null,null,null,null,""
+  Greek Yogurt,breakfast,true,Standard,21.99,291,10.2,25.7,18.2,Creamy Greek yogurt served fresh
+  Buffalo Burger,burgers,true,Standard,29.99,529,32,35.9,24.6,Juicy buffalo-style burger with a spicy tangy finish
+  Chicken Burger,burgers,true,Standard,25,562,31.7,52.9,24.2,Chicken burger
+  Egg Omelette Sandwich,burgers,true,Standard,16.99,392,20.3,28.5,20.4,Egg omelette sandwich
+  Shrimp Maghboos,biryani,true,Regular,34.99,442,50.3,88.9,7,Fragrant Gulf-style spiced rice with your choice of protein
+  French Toast,breakfast,true,Standard,19.99,436,13.5,56.8,15.4,Golden French toast served with a lightly sweet finish
+  White Sauce Shrimp Risotto,risotto,true,Regular,30,531,53.4,56.2,14.1,Creamy risotto finished with smooth white sauce
+  Shrimp Croissant,burgers,true,Standard,27.99,null,null,null,null,""
+  Avocado Salad (No meat),salad,true,Standard,25,263,3.2,13.2,23.5,Fresh greens topped with creamy avocado and garden vegetables.
+  Avocado Salad (No meat),salad,true,Standard,25,263,3.2,13.2,23.5,Fresh greens topped with creamy avocado and garden vegetables.
+  "Kale, Pomegranate & Spinach Salad",salad,true,Standard,19.99,210,7,11.5,16.9,"Kale, spinach, mushrooms, cucumber, and sweet pomegranate."
+  "Kale, Pomegranate & Spinach Salad",salad,true,Standard,19.99,210,7,11.5,16.9,"Kale, spinach, mushrooms, cucumber, and sweet pomegranate."
+  Rocca Salad,salad,true,Standard,18,185,6.5,6.5,15.5,Fresh rocca leaves with garden vegetables and a light dressing.
+  Rocca Salad,salad,true,Standard,18,185,6.5,6.5,15.5,Fresh rocca leaves with garden vegetables and a light dressing.
+  Brown Rice,rice-sides,true,150g,9.99,167,3.9,34.4,1.4,Nutty and wholesome brown rice
+  Cooked Quinoa,rice-sides,true,150g,15.99,26,3.4,14.1,2.9,"Fluffy, protein-rich cooked quinoa"
+  3 Mini Burger,burgers,false,Standard,30,545,31.4,37.3,29.4,Three mini burgers
+  Ecstasy Burger,burgers,false,Standard,35,789,49.5,49.6,42.3,Ecstasy burger
+  Salmon Fusilli Pasta,pasta,false,Standard,40,545,30.5,50,23.5,Fusilli pasta tossed with savory sauce and tender protein
+  Chicken Casserole,chicken,true,150g,25,524,33.8,55.5,17.2,Oven-baked chicken in a hearty casserole.
+  Beetroot Rice,rice-sides,true,150g,13.99,199,3.5,39.7,1.1,Vibrant beetroot-infused rice
+  Tuna Salad,salad,true,Standard,24.99,198,16.8,7.2,11.5,Fresh vegetables with premium tuna and a light dressing.
+  Lemon Garlic Shrimp,seafood,true,150g,34.99,296,33.7,2.9,16.8,Shrimp sautéed in lemon garlic butter.
+  Dynamite Shrimp,seafood,true,150g,34.99,448,30.8,6.1,32.2,Crispy shrimp tossed in dynamite sauce.
+  Chicken Kabab,chicken,true,150g,30.99,497,30.7,38.3,23.9,Grilled chicken skewers with herbs and spices.
+  Chicken Broccoli,chicken,true,150g,25.99,471,38.7,45.3,13.8,Grilled chicken served with broccoli.
+  Chicken Kofta,chicken,true,150g,30,563,35.8,49.9,22.8,Grilled minced chicken seasoned with aromatic spices.
+  Teriyaki Chicken,chicken,true,150g,25.99,488,38.6,49.6,13.4,Sweet and savory Japanese-style teriyaki chicken.
+  Beef Steak with Mushroom Sauce,beef,true,150g,40,645,31.8,82,15,Steak topped with creamy mushroom sauce.
+  Barbecue Beef,beef,true,150g,39.99,524,21.2,87.6,4.2,Grilled beef glazed with smoky BBQ sauce.
+  Grilled Beef Steak,beef,true,150g,39.99,322,30.8,0,23,Tender grilled beef steak cooked to perfection.
+  Dill Salmon,seafood,true,150g,44.99,241,28.7,0.6,12.8,Salmon served with creamy dill sauce.
+  Shrimp Pasta Pesto,pasta,true,Standard,30,575,28.2,48,29,Pasta coated in fragrant basil pesto with parmesan cheese.
+  Salmon Maghboos,biryani,true,Regular,44.99,483,29.2,88.9,12.3,Fragrant Gulf-style spiced rice with your choice of protein
+  Scottish Tuna Sandwich,burgers,false,Standard,20,306,17.5,27.2,13.5,Scottish tuna sandwich
+  Pancakes w Berries & Honey,breakfast,true,Standard,24.99,376,8.6,60.6,9.8,Fluffy pancakes topped with berries and honey
+  Blueberry Banana Greek Yogurt,smoothie,true,Regular,24.99,180,8,28,5,"Creamy smoothie blended with blueberries, banana and Greek yogurt"
+  Banana Milk & Walnut,smoothie,true,Regular,15,220,7,28,12,Creamy banana and milk smoothie with walnuts
+  Kiwi Juice,juice,true,Regular,19.99,100,2,22,1,Refreshing fresh kiwi juice
+  Green Apple Juice,juice,true,Regular,19.99,90,1,22,0.3,Fresh green apple juice
+  Strawberry & Melon Juice,juice,true,Regular,19.99,60,1,14,0.3,Refreshing strawberry and melon juice
+  Beetroot Lemon & Ginger Juice,juice,true,Regular,17.99,60,2,13,0.3,Refreshing beetroot juice with lemon and ginger
+  Strawberry and Lemon Juice,juice,true,Regular,17.99,65,1,16,0.3,Strawberry and lemon juice
+  Chocolate Protein Shake,beverages,true,Regular,19.99,350,30,35,12,Rich chocolate protein shake
+  Mixed Berries Walnut Protein Shake,beverages,true,Regular,19.99,320,26,30,14,Mixed berry protein shake with walnuts
+  Greek Salad (Shrimp),salad,true,Standard,30,310,22,10,18.5,"Fresh Greek salad with crisp vegetables, feta and olives"
+  Shrimp Mix Sauce Pasta,pasta,true,Standard,35,470,22.2,55,16,Pasta coated in a creamy blend of white and tomato sauces.
+  Yellow Rice,rice-sides,true,150g,9.99,230,3.3,40,1.1,Fragrant seasoned yellow rice
+  Date Cake,desserts,true,Slice,10,469,7,59.7,21.3,Date cake slice
+  Spinach Paneer,vegetable,true,Standard,24.99,423,21.7,13.4,36.6,Creamy spinach and paneer curry
+  Acai w Mango,breakfast,true,Standard,34.99,210,6.5,32.3,7.5,Acai bowl with mango
+  Waffles,breakfast,true,Standard,24.99,366,9,56.5,10.5,Golden fluffy waffles served with a lightly sweet finish
+  Smoked Grill Chicken Burger,burgers,false,Standard,25,420,31.1,46.1,11.7,Smoked grilled chicken burger
+  Chicken Risotto,risotto,true,Regular,29.99,676,51.2,59.8,24,Creamy Italian-style risotto prepared with tender chicken
+  Mixed Fruit Salad,salad,true,Standard,20,215,3,53.7,0.7,A colorful selection of fresh seasonal fruits.
+  Margherita Pizza,pizza,true,Regular,29.99,750,30,95,32,Classic pizza topped with tomato sauce and mozzarella
+  Chicken Caesar Wrap,wrap,true,Standard,19.99,187,22.3,13.3,16.4,Caesar-style wrap with crisp lettuce and parmesan.
+  Foul Mudammas,breakfast,true,Standard,11.99,null,null,null,null,""

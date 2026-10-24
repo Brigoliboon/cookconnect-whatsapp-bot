@@ -15,6 +15,30 @@ node src/index.js
 Scan the QR code via WhatsApp → Linked devices. Session persists in `auth/`.
 Test prompts without WhatsApp: `node test-prompt.js` (`clear` resets history).
 
+## Local simulator
+
+Set `SIMULATOR_ENABLED=true` to start a local HTTP endpoint on `127.0.0.1`
+(default port `3001`). It runs independently of the WhatsApp connection and
+feeds messages through the same history, reset handling, OpenRouter call, and
+sanitization as real chats.
+
+```bash
+curl -X POST http://127.0.0.1:3001/simulate \
+  -H 'Content-Type: application/json' \
+  -d '{"from":"971500000001","text":"Show me chicken meals"}'
+
+curl -X POST http://127.0.0.1:3001/simulate/reset \
+  -H 'Content-Type: application/json' \
+  -d '{"from":"971500000001"}'
+
+curl http://127.0.0.1:3001/simulate/health
+```
+
+Simulated numbers are recorded so the reminder poller never sends to them. Tool
+API calls use `SIMULATOR_API_URL` when set. Without it, non-GET (mutating) tool
+calls are dry runs that log `[simulator dry-run]`, while read-only GET lookups
+may still hit the real API.
+
 ## Env variables
 
 | Name | Required | Default | Purpose |
@@ -27,8 +51,11 @@ Test prompts without WhatsApp: `node test-prompt.js` (`clear` resets history).
 | `COOKCONNECT_API_URL` | for reminders | `http://localhost:3000` | Website API base |
 | `COOKCONNECT_BOT_SECRET` | for reminders | — | `x-bot-secret` auth header |
 | `DEFAULT_COUNTRY_CODE` | no | `971` | Prefix for `0...` local numbers (`63` for PH testing) |
-| `SITE_LINK` | no | `https://cookconnect.vercel.app` | Links sent to users |
-| `API_BASE` | no | `https://cookconnect.vercel.app` | Menu API base |
+| `SIMULATOR_ENABLED` | no | `false` | Set `true` to start the local simulation endpoint |
+| `SIMULATOR_PORT` | no | `3001` | Local simulation port (bound to `127.0.0.1`) |
+| `SIMULATOR_API_URL` | no | — | API base for simulated tool calls; unset dry-runs mutating calls |
+| `SITE_LINK` | no | `https://cookconnectae.com` | Links sent to users |
+| `API_BASE` | no | `https://cookconnectae.com` | Menu API base |
 | `UTM_SOURCE` / `UTM_MEDIUM` | no | `whatsapp_bot` / `chatbot` | Tracking on menu API calls |
 | `AUTH_DIR` | no | `./auth` | Session storage (never delete while running) |
 | `LOG_LEVEL` | no | `info` | Baileys log level (`silent` recommended) |

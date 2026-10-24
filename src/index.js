@@ -11,6 +11,7 @@ const qrcode = require('qrcode-terminal');
 const pino = require('pino');
 const { askOpenRouter } = require('../lib/openrouter');
 const { startPoller } = require('../lib/reminder-poller');
+const { startSimulator } = require('../lib/simulator');
 
 const authDir = process.env.AUTH_DIR || './auth';
 const history = new Map();
@@ -39,14 +40,8 @@ function remember(jid, role, text) {
   history.set(jid, entries.slice(-MAX_HISTORY));
 }
 
-async function handleMessage(sock, message) {
-  const jid = message.key.remoteJid;
-  const text = getText(message);
-  if (!jid || !text || jid === 'status@broadcast' || message.key.fromMe) return;
-
-  const key = getNumber(message) || jid;
+async function processText(key, text, { simulated = false } = {}) {
   const normalized = text.toLowerCase();
-  console.log(`[MSG] ${key} (${message.pushName || 'unknown'}): ${text}`);
   let reply;
 
   if (normalized === 'reset') {
@@ -54,7 +49,7 @@ async function handleMessage(sock, message) {
     reply = 'Conversation reset. What can I help you with?';
   } else {
     try {
-      reply = await askOpenRouter({ text, history: history.get(key) || [] });
+      reply = await askOpenRouter({ text, history: history.get(key) || [], simulated });
     } catch (error) {
       console.error('OpenRouter error:', error.message);
       reply = 'I\'m having trouble reaching the assistant right now. Please try again shortly.';
@@ -63,6 +58,17 @@ async function handleMessage(sock, message) {
 
   remember(key, 'user', text);
   remember(key, 'assistant', reply);
+  return reply;
+}
+
+async function handleMessage(sock, message) {
+  const jid = message.key.remoteJid;
+  const text = getText(message);
+  if (!jid || !text || jid === 'status@broadcast' || message.key.fromMe) return;
+
+  const key = getNumber(message) || jid;
+  console.log(`[MSG] ${key} (${message.pushName || 'unknown'}): ${text}`);
+  const reply = await processText(key, text);
   await sock.sendMessage(jid, { text: reply });
 }
 
@@ -111,6 +117,10 @@ async function startWhatsApp() {
       next.finally(() => { if (queues.get(key) === next) queues.delete(key); });
     }
   });
+}
+
+if (process.env.SIMULATOR_ENABLED === 'true') {
+  startSimulator({ history, processText });
 }
 
 startWhatsApp().catch((error) => { console.error('Unable to start WhatsApp:', error); process.exitCode = 1; });

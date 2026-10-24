@@ -30,7 +30,7 @@ Encoding happens deterministically in the executor:
 
 ```js
 await executeTool('generate_order_link', { meal_ids: ['uuid-1', 'uuid-2'] });
-// → { checkout_link: 'https://cookconnect.vercel.app/catalog?ids=...&checkout=true' }
+// → { checkout_link: 'https://cookconnectae.com/catalog?ids=...&checkout=true' }
 ```
 
 ## Bot flow (`whatsapp-system-context.xml`)
