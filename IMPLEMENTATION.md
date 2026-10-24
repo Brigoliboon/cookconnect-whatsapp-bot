@@ -124,6 +124,50 @@ Checkpoints:
 - [x] Detailed operation logging (`[api]` / `[tool]` / `[order_history]` / `[create_order]`)
 - [ ] `tests/CREATE_ORDER_TESTCASE.md` — all cases pass (incl. simulator dry-run)
 
+## Feature: Checkout Link Hardening (Oct 25)
+
+Ticket: make checkout links unforgeable end-to-end + 3 prompt fixes.
+
+**Changes:**
+- `generate_order_link` requires a boolean `delivery_eligible`; the executor
+  returns `{ error: 'Not eligible for delivery — …' }` (no link) unless it is
+  strictly `true`.
+- `lib/llm/index.js` reply guard: tracks checkout links returned by
+  `generate_order_link` during the turn; before the reply is returned, any
+  cookconnectae.com URL that looks like an order link (`/checkout`, `items=`,
+  `ids=`, `checkout=true`) and is not exactly a tool-built link this turn is
+  removed (logged via `[reply_guard]` warning). The plain
+  `/menu?utm_source=whatsapp` browse link is allowed.
+- Prompt (`whatsapp-system-context.xml`, merged into existing bullets, 0 net
+  lines): pass `delivery_eligible` honestly / no link when false; 1–100 qty cap
+  only for `create_order` (checkout-link orders: any qty > 0, set in cart);
+  say the exact dish isn't available then offer the closest real match; order
+  tracking → support contact, never "note"/look up an order number.
+
+Checkpoints:
+- [x] `lib/tools.js` — `delivery_eligible` required boolean param
+- [x] `lib/tool-executor.js` — eligibility gate before building the link
+- [x] `lib/llm/index.js` — per-turn link allowlist + strip + warn
+- [x] `whatsapp-system-context.xml` — 4 clauses merged, size unchanged (143 lines)
+- [x] `node --check` on all touched files
+- [x] Acceptance script: ineligible → error/no link; invented `/checkout?items=` stripped; tool-built `/menu?ids=` + plain menu link pass through
+
+**Follow-up QA (same day):**
+- Reply guard now also trusts catalog links found in prior tool results / prior
+  assistant history (so "send link again" re-sends survive), while `/checkout`
+  and `items=` URLs are always stripped; a removed link that leaves a dangling
+  lead-in ("Here it is:") gets "— I'll resend the link in a moment." Prompt
+  additionally requires calling generate_order_link again on any resend.
+- Prompt: off-menu dish rule extended to ordering; pause requests → team/support
+  contact, never an invented website link; Arabic complaint order-number wording
+  fixed ("ممكن ترسل لي رقم الطلب؟").
+
+**Direction change (Boon):** link/order enforcement moved from code to prompt —
+the reply guard in `lib/llm/index.js` is removed (plain
+`return sanitizeWhatsApp(reply)`); the `<ordering>` section is a single
+explicit rule block (link/order gating, browse-link-only rule, chat-claim
+injection rule). The `delivery_eligible` param + executor check stay in code.
+
 ## QA Strategy (manual)
 
 1. `node --check` on every touched file (repo has no linter configured).
