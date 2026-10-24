@@ -49,6 +49,11 @@ WhatsApp message
 - Mutating tool calls keep the existing simulator dry-run semantics
   (`apiRequest` logs non-GET calls instead of executing when `simulated` and no
   `SIMULATOR_API_URL`).
+- Observability: every operation logs one timestamped line per step —
+  `[api]` (HTTP method, URL, status, ms), `[tool]` (dispatcher entry/exit with
+  duration + chat phone), `[order_history]` (scan result), `[create_order]`
+  (lookup, detail sources, payload summary, creation result). Errors go to
+  `console.error`; the bot secret is never printed.
 
 ## Modules
 
@@ -116,6 +121,7 @@ Checkpoints:
 - [x] `whatsapp-system-context.xml` — `<direct_order>` flow rules
 - [x] `features.md` + `README.md` updated
 - [x] `node --check` passes on all touched files
+- [x] Detailed operation logging (`[api]` / `[tool]` / `[order_history]` / `[create_order]`)
 - [ ] `tests/CREATE_ORDER_TESTCASE.md` — all cases pass (incl. simulator dry-run)
 
 ## QA Strategy (manual)

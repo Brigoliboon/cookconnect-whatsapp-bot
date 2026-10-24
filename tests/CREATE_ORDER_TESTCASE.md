@@ -102,3 +102,25 @@ Manual QA. `[S]` simulator · `[T]` test-prompt · `[O]` server/API observation 
 - Expect: `<direct_order>` flow documented (scan → confirm → items-only create);
   `COOKCONNECT_BOT_SECRET` ↔ backend `WHATSAPP_BOT_SECRET` noted; tool list
   includes `order_history` and `create_order`.
+
+## L1 — Operation logs (both tools)
+
+Every log line is timestamped ISO + scope, e.g.
+`2026-10-24T18:00:00.000Z [order_history] phone=971… → confirmed order found ms=42 …`.
+Secret values are never printed.
+
+- Action: `[S]` Run an `order_history` scan (found and not-found).
+- Expect: `[api] GET /api/orders?phone=…&status=confirmed&limit=1 → 200 ms=…`
+  and `[order_history] phone=… → confirmed order found|no confirmed order ms=…`
+  with name/mobile/address in the "found" line.
+- Action: `[S]` Run `create_order` in dry-run, then (if possible) a real call.
+- Expect: `[create_order]` logs, in order: saved-details lookup result →
+  details sources (`name_from`, `mobile_from`, `address_from`, `has_location`,
+  `items`, `total_qty`, `secret`, `reused_saved_details`) →
+  `[api] POST … → status ms=…` → `order created id=… status=…` (or
+  `POST dry-run (simulated) — no order created`).
+- Action: `[T]` Trigger validation failures (no items; bad qty; missing details).
+- Expect: `[create_order] rejected — …` error lines; nothing sent.
+- Action: Any tool call, success or failure.
+- Expect: A dispatcher line `[tool] op=<name> status=ok|error|throw ms=… chat=<phone>`;
+  `x-bot-secret` value never appears in any log.

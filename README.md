@@ -90,6 +90,12 @@ corresponding `LLM_*` variable is unset.
 
 Commands in chat: `reset` clears that user's history.
 
+Operation logs: every tool call and API request prints one timestamped line —
+`[api]` (method, URL, status, ms), `[tool]` (tool name, ok/error, duration, chat
+number), plus step lines from `[order_history]` (scan result) and `[create_order]`
+(saved-details lookup, detail sources, creation result). Errors go to stderr; the
+bot secret is never printed.
+
 ## Ops notes
 
 - `Bad MAC` / decrypt errors after phone logout/reinstall → delete `auth/`,
