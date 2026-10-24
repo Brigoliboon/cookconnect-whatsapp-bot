@@ -59,6 +59,6 @@
 - `whatsapp-system-context.xml` — bot identity, role, constraints, plans, policies
 - `lib/tools.js` — tool definitions
 - `lib/tool-executor.js` — tool implementations
-- `lib/openrouter/index.js` — OpenRouter integration
+- `lib/llm/index.js` — provider-neutral LLM integration (DeepSeek)
 - `features.md` — this checklist
 - `test-prompt.js` — prompt tester script

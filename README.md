@@ -1,7 +1,7 @@
 # CookConnect WhatsApp Bot
 
 WhatsApp chatbot for CookConnect (meal-plan platform, Ajman UAE). Built on
-Baileys (linked-device session), answers via OpenRouter with tool calling,
+Baileys (linked-device session), answers via DeepSeek with tool calling,
 and sends order/subscription reminders polled from the website API.
 
 ## Run
@@ -19,7 +19,7 @@ Test prompts without WhatsApp: `node test-prompt.js` (`clear` resets history).
 
 Set `SIMULATOR_ENABLED=true` to start a local HTTP endpoint on `127.0.0.1`
 (default port `3001`). It runs independently of the WhatsApp connection and
-feeds messages through the same history, reset handling, OpenRouter call, and
+feeds messages through the same history, reset handling, LLM call, and
 sanitization as real chats.
 
 ```bash
@@ -43,11 +43,10 @@ may still hit the real API.
 
 | Name | Required | Default | Purpose |
 |---|---|---|---|
-| `OPENROUTER_API_KEY` | yes | — | AI model access |
-| `OPENROUTER_MODEL` | no | `openai/gpt-4o-mini` | Model id (`openrouter/free` routes free models) |
-| `OPENROUTER_BASE_URL` | no | `https://openrouter.ai/api/v1` | API endpoint |
-| `OPENROUTER_SITE_URL` | no | — | `HTTP-Referer` header |
-| `OPENROUTER_APP_NAME` | no | — | `X-Title` header |
+| `LLM_API_KEY` | yes | — | AI model access (DeepSeek key) |
+| `LLM_MODEL` | no | `deepseek-chat` | Model id (must support tool calling) |
+| `LLM_BASE_URL` | no | `https://api.deepseek.com` | OpenAI-compatible API endpoint |
+| `LLM_TIMEOUT_MS` | no | `60000` | Per-request timeout |
 | `COOKCONNECT_API_URL` | for reminders | `http://localhost:3000` | Website API base |
 | `COOKCONNECT_BOT_SECRET` | for reminders | — | `x-bot-secret` auth header |
 | `DEFAULT_COUNTRY_CODE` | no | `971` | Prefix for `0...` local numbers (`63` for PH testing) |
@@ -62,6 +61,9 @@ may still hit the real API.
 | `BOT_NAME` | unused | — | Legacy, ignored |
 | `OPENROUTER_SYSTEM_PROMPT` | unused | — | Legacy — prompt now loads from `whatsapp-system-context.xml` |
 
+The legacy `OPENROUTER_*` names are still accepted as fallbacks when the
+corresponding `LLM_*` variable is unset.
+
 ## How it works
 
 - `src/index.js` — socket, per-user message queues (concurrent across users,
@@ -72,6 +74,8 @@ may still hit the real API.
 - `lib/tools.js` + `lib/tool-executor.js` — tool definitions and implementations:
   `search_menu`, `meal_category`, `generate_order_link`, `get_subscription_plans`,
   `get_delivery_areas`, `get_current_time`.
+- `lib/llm/index.js` — provider-neutral OpenAI-compatible client (DeepSeek by
+  default): timeout, retry/backoff on 429/5xx, tool-call loop.
 - `lib/catalog.js` — meal-UUID base64 encode/decode + checkout URL builder.
   The AI passes raw UUIDs; encoding stays in code (see `CATALOG.md`).
 - `lib/reminder-poller.js` — 60s tick over `GET /api/whatsapp-reminder`,

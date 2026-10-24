@@ -1,6 +1,6 @@
 require('dotenv').config();
 const readline = require('readline');
-const { askOpenRouter } = require('./lib/openrouter');
+const { askModel } = require('./lib/llm');
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -20,7 +20,7 @@ function prompt() {
     if (!trimmed) { prompt(); return; }
 
     try {
-      const reply = await askOpenRouter({ text: trimmed, history });
+      const reply = await askModel({ text: trimmed, history });
       history.push({ role: 'user', text: trimmed });
       history.push({ role: 'assistant', text: reply });
       console.log(`\nBot: ${reply}\n`);
