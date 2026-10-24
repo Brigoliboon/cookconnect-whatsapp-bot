@@ -48,7 +48,7 @@ may still hit the real API.
 | `LLM_BASE_URL` | no | `https://api.deepseek.com` | OpenAI-compatible API endpoint |
 | `LLM_TIMEOUT_MS` | no | `60000` | Per-request timeout |
 | `COOKCONNECT_API_URL` | for reminders | `http://localhost:3000` | Website API base |
-| `COOKCONNECT_BOT_SECRET` | for reminders | — | `x-bot-secret` auth header |
+| `COOKCONNECT_BOT_SECRET` | for reminders/orders | — | `x-bot-secret` auth header (must equal backend `WHATSAPP_BOT_SECRET` to tag orders `origin: "whatsapp"`) |
 | `DEFAULT_COUNTRY_CODE` | no | `971` | Prefix for `0...` local numbers (`63` for PH testing) |
 | `SIMULATOR_ENABLED` | no | `false` | Set `true` to start the local simulation endpoint |
 | `SIMULATOR_PORT` | no | `3001` | Local simulation port (bound to `127.0.0.1`) |
@@ -73,7 +73,7 @@ corresponding `LLM_*` variable is unset.
   on every request, so edits apply without restart.
 - `lib/tools.js` + `lib/tool-executor.js` — tool definitions and implementations:
   `search_menu`, `meal_category`, `generate_order_link`, `get_subscription_plans`,
-  `get_delivery_areas`, `get_current_time`.
+  `get_delivery_areas`, `get_current_time`, `order_history`, `create_order`.
 - `lib/llm/index.js` — provider-neutral OpenAI-compatible client (DeepSeek by
   default): timeout, retry/backoff on 429/5xx, tool-call loop.
 - `lib/catalog.js` — meal-UUID base64 encode/decode + checkout URL builder.
@@ -81,6 +81,11 @@ corresponding `LLM_*` variable is unset.
 - `lib/reminder-poller.js` — 60s tick over `GET /api/whatsapp-reminder`,
   sends template per `kind`/`type`, `PATCH`es sent, appends to history.
   `out_for_delivery` enriches via `GET /api/delivery/{orderId}` (404 → retry later).
+- Direct orders: `order_history` scans `GET /api/orders?phone=…&status=confirmed&limit=1`
+  using the chat's phone number (injected into tool context, never chosen by the AI)
+  and returns only saved name/mobile/address. `create_order` POSTs `/api/orders` with
+  `x-bot-secret` and reuses the saved details — including the map location — itself;
+  the AI passes items only.
 - `features.md` — implementation checklist. `test-prompt.js` — CLI prompt tester.
 
 Commands in chat: `reset` clears that user's history.

@@ -33,6 +33,17 @@
 - [ ] Tool: `track_order(order_id)` — queries order status
 - [ ] Show delivery status, estimated time, rider info
 
+### 7. Direct Order (chat)
+- [x] Phone plumbed from chat into tool context (never from the AI)
+- [x] Tool: `order_history` — `GET /api/orders?phone=…&status=confirmed&limit=1` (limit hardcoded)
+- [x] `order_history` returns only saved name, mobile number, address
+- [x] Tool: `create_order` — `POST /api/orders` with `x-bot-secret` → `origin: "whatsapp"`
+- [x] `create_order` reuses saved details itself (incl. map location EWKB → lat/lng); AI passes items only
+- [x] New customers: bot collects name + address in chat before calling
+- [x] Simulator dry-run kept for POST (no real orders during QA)
+- [x] Prompt flow in `whatsapp-system-context.xml` (`<direct_order>`)
+- [ ] End-to-end live test (scan → confirm → create → order visible in backend)
+
 ## Infrastructure
 
 - [x] Tool calling support (OpenRouter)

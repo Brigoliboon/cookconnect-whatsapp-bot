@@ -49,7 +49,7 @@ async function processText(key, text, { simulated = false } = {}) {
     reply = 'Conversation reset. What can I help you with?';
   } else {
     try {
-      reply = await askModel({ text, history: history.get(key) || [], simulated });
+      reply = await askModel({ text, history: history.get(key) || [], simulated, phone: key });
     } catch (error) {
       console.error('LLM error:', error.message);
       reply = 'I\'m having trouble reaching the assistant right now. Please try again shortly.';
