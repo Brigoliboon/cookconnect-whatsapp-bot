@@ -94,7 +94,7 @@ Manual QA. `[S]` simulator · `[T]` test-prompt · `[O]` server/API observation 
 - Action: `[O]` Backend returns 400/500 on POST, and separately GET fails during
   the saved-details lookup.
 - Expect: `{ error: … }` to the model in both cases; bot apologizes / gives
-  +971556634050; no crash; no order created when the lookup fails.
+  +971563356051; no crash; no order created when the lookup fails.
 
 ## C9 — Docs
 

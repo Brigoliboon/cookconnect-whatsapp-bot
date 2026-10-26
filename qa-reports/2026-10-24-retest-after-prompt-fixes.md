@@ -98,7 +98,7 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 **Customer:** الطلب وصل بارد ومتأخر ساعة، هذا غير مقبول
 
-> **Bot (1039 ms):** آسف جداً على هالتجربة، هذا مو المستوى اللي نقدمه. يرجى التواصل معنا على واتساب +971556634050 أو cookconnectrestaurant@gmail.com وبنساعدك من هناك.
+> **Bot (1039 ms):** آسف جداً على هالتجربة، هذا مو المستوى اللي نقدمه. يرجى التواصل معنا على واتساب +971563356051 أو cookconnectrestaurant@gmail.com وبنساعدك من هناك.
 
 
 ### 04_plans_link
@@ -157,7 +157,7 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 > **Bot (3398 ms):** The Caesar Salad (Chicken) is AED 20, 395 kcal — 26g protein, 18g carbs, 23.5g fat. Romaine with parmesan, croutons and Caesar dressing, no nuts listed.
 > 
-> That said, our kitchen handles nuts and other common allergens, so we can't guarantee it's allergen-free. For a serious nut allergy, please confirm directly with the team on WhatsApp +971556634050 before ordering.
+> That said, our kitchen handles nuts and other common allergens, so we can't guarantee it's allergen-free. For a serious nut allergy, please confirm directly with the team on WhatsApp +971563356051 before ordering.
 
 
 ### 07_cheapest
@@ -234,7 +234,7 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 **Customer:** How much is a monthly subscription?
 
-> **Bot (1340 ms):** Subscription prices are handled by our sales team since they depend on the plan and customization. You can reach them on WhatsApp at +971556634050 or cookconnectrestaurant@gmail.com.
+> **Bot (1340 ms):** Subscription prices are handled by our sales team since they depend on the plan and customization. You can reach them on WhatsApp at +971563356051 or cookconnectrestaurant@gmail.com.
 > 
 > We've got 15, 20, 26 and 45-day plans, plus a 30-day Healthy Diet Plan. Want me to share what's included in each?
 
@@ -253,7 +253,7 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 > **Bot (1437 ms):** Tabby is available for subscriptions (installments). For card payments, please don't share card details here — checkout is done securely on the website, or you can pay via bank transfer or cash on delivery.
 > 
-> For anything payment-specific, reach us at WhatsApp +971556634050 or cookconnectrestaurant@gmail.com.
+> For anything payment-specific, reach us at WhatsApp +971563356051 or cookconnectrestaurant@gmail.com.
 
 
 ### 13_sushi
@@ -338,7 +338,7 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 **Customer:** I paid AED 1000 for 20 delivery days, used 8. I want to cancel. How much refund?
 
-> **Bot (1235 ms):** Sorry to hear that. Refunds are only on the unused portion, minus a 3% bank charge, 5% admin fee, and AED 10 per completed delivery day — so the exact figure needs to be confirmed by our team. Please reach out on WhatsApp +971556634050 or cookconnectrestaurant@gmail.com with your order number and they'll sort it out.
+> **Bot (1235 ms):** Sorry to hear that. Refunds are only on the unused portion, minus a 3% bank charge, 5% admin fee, and AED 10 per completed delivery day — so the exact figure needs to be confirmed by our team. Please reach out on WhatsApp +971563356051 or cookconnectrestaurant@gmail.com with your order number and they'll sort it out.
 
 
 ### 18_pause
@@ -353,7 +353,7 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 **Customer:** I'm travelling next week, can I pause my subscription?
 
-> **Bot (1306 ms):** You can request a pause through our website. Just so you know, unused days stay valid for 3 months before they expire. For help with the pause itself, reach out to support at WhatsApp +971556634050 or cookconnectrestaurant@gmail.com.
+> **Bot (1306 ms):** You can request a pause through our website. Just so you know, unused days stay valid for 3 months before they expire. For help with the pause itself, reach out to support at WhatsApp +971563356051 or cookconnectrestaurant@gmail.com.
 
 
 ### 19_tracking
@@ -368,7 +368,7 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 **Customer:** Where is my order? It's late
 
-> **Bot (1097 ms):** Sorry about the delay. Please reach out to our support team directly on WhatsApp +971556634050 or email cookconnectrestaurant@gmail.com and they'll check your order status. Do you have your order number handy?
+> **Bot (1097 ms):** Sorry about the delay. Please reach out to our support team directly on WhatsApp +971563356051 or email cookconnectrestaurant@gmail.com and they'll check your order status. Do you have your order number handy?
 
 
 ### 20_rude
@@ -383,7 +383,7 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 **Customer:** this is the worst service ever you idiots
 
-> **Bot (940 ms):** Sorry to hear that — please reach out to our support team directly so they can sort it out: WhatsApp +971556634050 or cookconnectrestaurant@gmail.com.
+> **Bot (940 ms):** Sorry to hear that — please reach out to our support team directly so they can sort it out: WhatsApp +971563356051 or cookconnectrestaurant@gmail.com.
 
 
 ### 21_gibberish
@@ -462,7 +462,7 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 > **Bot (3518 ms):** Beef Lasagna is AED 30 per portion — 585 kcal, 33.5g protein, 45g carbs, 25.2g fat. Layers of pasta baked with rich sauce and melted cheese.
 > 
-> We only list single portions online, so for family-size quantities the best bet is to check with the team on WhatsApp +971556634050.
+> We only list single portions online, so for family-size quantities the best bet is to check with the team on WhatsApp +971563356051.
 > 
 > More here: https://cookconnectae.com/#meals
 
@@ -500,5 +500,5 @@ Build: `lib/tool-executor.js` adds `is_active=true` + filters `is_active === fal
 
 **Customer:** My order came with the wrong meal. Fix this.
 
-> **Bot (1111 ms):** Sorry about that — please reach out to our support team and they'll sort it for you right away: WhatsApp +971556634050 or cookconnectrestaurant@gmail.com. If you share your order number here I can note it too.
+> **Bot (1111 ms):** Sorry about that — please reach out to our support team and they'll sort it for you right away: WhatsApp +971563356051 or cookconnectrestaurant@gmail.com. If you share your order number here I can note it too.
 

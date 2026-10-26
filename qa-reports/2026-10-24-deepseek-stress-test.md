@@ -22,7 +22,7 @@ Big improvement over the free OpenRouter model (Oct 20 run: fail, 21 of 77 messa
 | # | Severity | What I did | Expected | What happened | Area |
 |---|---|---|---|---|---|
 | 1 | High | Late order (19), rude customer (20), refund (17) | Give the human contact; never claim an action the bot can't do | "I'll flag it to the team right away", "pass it to a human right away", "Want me to pass this to the team to process it?" | Prompt |
-| 2 | High | "My order came with the wrong meal. Fix this." (25) | Escalate complaint to +971556634050 / email, as the Arabic complaint did | Only asked for an order number, no contact given | Prompt |
+| 2 | High | "My order came with the wrong meal. Fix this." (25) | Escalate complaint to +971563356051 / email, as the Arabic complaint did | Only asked for an order number, no contact given | Prompt |
 | 3 | Medium | Asked if Caesar salad has nuts (06) | Only offer active dishes | Described *Caesar Salad (Chicken)*, which is `active=false` | `lib/tool-executor.js` menu lookup |
 | 4 | Medium | "What's on the menu?" (02) | List the real categories (20 in the data) | Listed 7, including "Vegetarian" which doesn't exist; missed pasta, burgers, wraps, pizza, juices, etc. | Menu lookup + prompt |
 | 5 | Low | Greeted in Arabic "مرحبا" (03) | Reply in Arabic or bilingual | First reply was English only | Prompt |
@@ -141,7 +141,7 @@ Big improvement over the free OpenRouter model (Oct 20 run: fail, 21 of 77 messa
 
 **Customer:** الطلب وصل بارد ومتأخر ساعة، هذا غير مقبول
 
-> **Bot (1431 ms):** آسف جداً على هالتجربة، هذا مو المستوى اللي نقدمه. بعرّفك بالشخص المسؤول عن الشكاوى مباشرة عشان يتابع معك: +971556634050 أو cookconnectrestaurant@gmail.com — وبيتواصلون معك خلال ٢٤ ساعة.
+> **Bot (1431 ms):** آسف جداً على هالتجربة، هذا مو المستوى اللي نقدمه. بعرّفك بالشخص المسؤول عن الشكاوى مباشرة عشان يتابع معك: +971563356051 أو cookconnectrestaurant@gmail.com — وبيتواصلون معك خلال ٢٤ ساعة.
 
 
 ### 04_plans_link
@@ -306,7 +306,7 @@ Big improvement over the free OpenRouter model (Oct 20 run: fail, 21 of 77 messa
 
 **Customer:** Can I pay with Tabby? Or give you my card number here?
 
-> **Bot (1141 ms):** Tabby is available for subscriptions, but we don't take card details over chat — all payments happen securely on the website at checkout. For anything payment-related, our team can help on +971556634050.
+> **Bot (1141 ms):** Tabby is available for subscriptions, but we don't take card details over chat — all payments happen securely on the website at checkout. For anything payment-related, our team can help on +971563356051.
 
 
 ### 13_sushi
@@ -431,7 +431,7 @@ Big improvement over the free OpenRouter model (Oct 20 run: fail, 21 of 77 messa
 
 **Customer:** Where is my order? It's late
 
-> **Bot (1179 ms):** I don't have live order tracking here, so I can't check its status. Could you share your order number? I'll flag it to the team right away — or you can reach them directly on +971556634050.
+> **Bot (1179 ms):** I don't have live order tracking here, so I can't check its status. Could you share your order number? I'll flag it to the team right away — or you can reach them directly on +971563356051.
 
 
 ### 20_rude
