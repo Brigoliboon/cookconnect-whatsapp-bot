@@ -11,8 +11,9 @@
 - [x] UTM tracking on API requests
 
 ### 2. Subscription Plans
-- [x] List available plans (15/20/26/45-Day, Healthy Diet)
-- [x] Negotiate price (list + counter-offers + one opening-price concession)
+- [x] List available plans (6/15/20/26/30/45-Day at 1–5 meals/day, plus Healthy Diet Plan)
+- [x] Negotiate price (list + counter-offers)
+- [x] Map each plan SKU to its restaurant `plan_slug` and send `meals_per_day`
 - [x] Generate the website onboarding link with the agreed price signed into the invite token
 - [x] Route Arabic chats to the `/ar` onboarding page
 - [x] Hand off to sales via WhatsApp for activation/payment after signup
