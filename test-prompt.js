@@ -8,6 +8,7 @@ const rl = readline.createInterface({
 });
 
 const history = [];
+const testPhone = process.env.TEST_PHONE || '971500000000';
 
 console.log('CookConnect System Prompt Tester');
 console.log('Type "exit" to quit, "clear" to reset history\n');
@@ -20,7 +21,7 @@ function prompt() {
     if (!trimmed) { prompt(); return; }
 
     try {
-      const reply = await askModel({ text: trimmed, history });
+      const reply = await askModel({ text: trimmed, history, phone: testPhone });
       history.push({ role: 'user', text: trimmed });
       history.push({ role: 'assistant', text: reply });
       console.log(`\nBot: ${reply}\n`);

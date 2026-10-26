@@ -48,7 +48,7 @@ may still hit the real API.
 | `LLM_BASE_URL` | no | `https://api.deepseek.com` | OpenAI-compatible API endpoint |
 | `LLM_TIMEOUT_MS` | no | `60000` | Per-request timeout |
 | `COOKCONNECT_API_URL` | for reminders | `http://localhost:3000` | Website API base |
-| `COOKCONNECT_BOT_SECRET` | for reminders/orders | — | `x-bot-secret` auth header (must equal backend `WHATSAPP_BOT_SECRET` to tag orders `origin: "whatsapp"`) |
+| `COOKCONNECT_BOT_SECRET` | reminders/orders/invites | — | `x-bot-secret` auth header (must equal backend `WHATSAPP_BOT_SECRET`; also required to create priced subscription invite links) |
 | `DEFAULT_COUNTRY_CODE` | no | `971` | Prefix for `0...` local numbers (`63` for PH testing) |
 | `SIMULATOR_ENABLED` | no | `false` | Set `true` to start the local simulation endpoint |
 | `SIMULATOR_PORT` | no | `3001` | Local simulation port (bound to `127.0.0.1`) |

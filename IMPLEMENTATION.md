@@ -192,3 +192,36 @@ injection rule). The `delivery_eligible` param + executor check stay in code.
 |---|---|---|
 | M1 — `order_history` scan tool | 🟡 implemented, QA pending | `tests/ORDER_HISTORY_TESTCASE.md` |
 | M2 — `create_order` tool + prompt flow | 🟡 implemented, QA pending | `tests/CREATE_ORDER_TESTCASE.md` |
+
+## Feature: Negotiated Price in Signup Link (Oct 26)
+
+Hand the agreed subscription price to the restaurant's real onboarding flow instead
+of a `wa.me` text link.
+
+**Decisions (finalized):**
+- Pricing authority stays in `config/subscriptions.json` (restaurant option A).
+- `subscription_signup_link` calls `POST ${COOKCONNECT_API_URL}/api/subscription-invites`
+  with `x-bot-secret` and returns the URL the API builds.
+- Request body: `{ plan, price_cents, base_price_cents, concession_id?, expiresInDays, locale? }`
+  (all amounts integer fils; server forces AED).
+- The model may only pass a price it actually quoted in this chat (`state.quoted` /
+  `state.lastOffer`), never just any valid counter from the config.
+- A `locale` parameter (`en` | `ar`) is added so Arabic chats get `/ar/...` links.
+- Simulator mode returns an error (no link) instead of a forged token.
+- Perks are resolved client-side as today; `price_cents` is the final effective amount
+  after a percent concession, `base_price_cents` is the pre-concession amount.
+- Prompt: send the returned onboarding URL; never restate a different amount.
+
+**Modules:**
+1. `lib/tools.js` — optional `locale` parameter on `subscription_signup_link`.
+2. `lib/tool-executor.js` — invite API call, quoted-price check, secret header.
+3. `whatsapp-system-context.xml` — step 7 link wording.
+4. `README.md` / `features.md` — tool description and env note.
+
+**Checkpoint (all must pass before marking complete):**
+- [x] Testcase file: `tests/SUBSCRIPTION_INVITE_PRICE_TESTCASE.md`
+- [x] `node --check` clean on touched files
+- [ ] Valid quoted price → restaurant URL with matching token
+- [x] Unquoted/invalid price → `{ error }`, no link
+- [x] Unknown plan / disallowed concession → `{ error }`, no link
+- [x] API failure / simulator dry-run → `{ error }`, no link

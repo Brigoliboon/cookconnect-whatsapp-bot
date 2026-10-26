@@ -12,8 +12,10 @@
 
 ### 2. Subscription Plans
 - [x] List available plans (15/20/26/45-Day, Healthy Diet)
-- [x] Walk through customization stepwise (goal, carbs, restrictions, delivery days, payment)
-- [x] Hand off to sales via WhatsApp for pricing and activation
+- [x] Negotiate price (list + counter-offers + one opening-price concession)
+- [x] Generate the website onboarding link with the agreed price signed into the invite token
+- [x] Route Arabic chats to the `/ar` onboarding page
+- [x] Hand off to sales via WhatsApp for activation/payment after signup
 
 ### 3. About Us
 - [x] Brand story since September 2016
